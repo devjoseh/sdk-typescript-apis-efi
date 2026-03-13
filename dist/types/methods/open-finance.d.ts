@@ -18,7 +18,7 @@ export class OpenFinanceMethods extends PixMethods {
         redirectURL: string;
         webhookURL: string;
         webhookSecurity: {
-            type: 'mtls' | 'hmac';
+            type: "mtls" | "hmac";
         };
     }>;
     /**
@@ -56,15 +56,15 @@ export class OpenFinanceMethods extends PixMethods {
         redirectURL: string;
         webhookURL: string;
         webhookSecurity?: {
-            type: 'mtls' | 'hmac';
+            type: "mtls" | "hmac";
             hash?: string;
         };
-        processPayment?: 'async' | 'sync';
+        processPayment?: "async" | "sync";
     }): Promise<{
         redirectURL: string;
         webhookURL: string;
         webhookSecurity: {
-            type: 'mtls' | 'hmac';
+            type: "mtls" | "hmac";
             hash?: string;
         };
     }>;
@@ -100,8 +100,8 @@ export class OpenFinanceMethods extends PixMethods {
     ofListParticipants(params: {
         nome?: string;
         organizacao?: boolean;
-        modalidade?: 'imediato' | 'recorrente' | 'agendado';
-        tipoPessoa?: 'PJ' | 'PF';
+        modalidade?: "imediato" | "recorrente" | "agendado";
+        tipoPessoa?: "PJ" | "PF";
     }): Promise<{
         participantes: Array<{
             identificador: string;
@@ -306,7 +306,7 @@ export class OpenFinanceMethods extends PixMethods {
                 agencia: string;
                 documento: string;
                 nome: string;
-                tipoConta: 'CACC' | 'SLRY' | 'SVGS' | 'TRAN';
+                tipoConta: "CACC" | "SLRY" | "SVGS" | "TRAN";
             };
         };
         pagamento: {
@@ -512,7 +512,7 @@ export class OpenFinanceMethods extends PixMethods {
                 agencia: string;
                 documento: string;
                 nome: string;
-                tipoConta: 'CACC' | 'SLRY' | 'SVGS' | 'TRAN';
+                tipoConta: "CACC" | "SLRY" | "SVGS" | "TRAN";
             };
         };
         pagamento: {
@@ -521,7 +521,7 @@ export class OpenFinanceMethods extends PixMethods {
             infoPagador?: string;
             idProprio?: string;
             recorrencia: {
-                tipo: 'diaria' | 'semanal' | 'mensal' | 'personalizada';
+                tipo: "diaria" | "semanal" | "mensal" | "personalizada";
                 dataInicio?: string;
                 quantidade?: number;
                 diaDaSemana?: string;

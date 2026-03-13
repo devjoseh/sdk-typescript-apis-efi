@@ -5,3 +5,4 @@ simulaMod.ts
 npm-debug.log
 coverage/
 .idea/
+.agent/
