@@ -1,5 +1,5 @@
 {
-	"name": "sdk-typescript-apis-efi",
+	"name": "efipay-unofficial-esm-types",
 	"main": "dist/cjs/index.cjs",
 	"types": "dist/types/index.d.ts",
 	"exports": {
@@ -9,13 +9,13 @@
 			"types": "./dist/types/index.d.ts"
 		}
 	},
-	"description": "Module for integration with Efi Bank API",
-	"version": "1.2.6",
-	"deprecated": "Este pacote será descontinuado. Use o 'sdk-node-apis-efi' no lugar.",
-	"author": "Efi Bank - Consultoria Técnica | João Vitor Oliveira | João Lucas",
+	"description": "Unofficial fork of Efi Bank API module with ESM and NodeNext support (ts2351 fix)",
+	"version": "1.2.7",
+	"deprecated": "Este pacote é um fork não-oficial. O pacote original está descontinuado e recomenda o 'sdk-node-apis-efi'.",
+	"author": "DevJoseH (Unofficial Fork) / Efi Bank - Consultoria Técnica",
 	"license": "MIT",
-	"repository": "efipay/sdk-typescript-apis-efi",
-	"homepage": "https://github.com/efipay/sdk-typescript-apis-efi",
+	"repository": "devjoseh/sdk-typescript-apis-efi",
+	"homepage": "https://github.com/devjoseh/sdk-typescript-apis-efi",
 	"keywords": [
 		"efi",
 		"efi pay",
