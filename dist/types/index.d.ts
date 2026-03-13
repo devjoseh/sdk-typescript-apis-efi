@@ -1,4 +1,4 @@
-export default class EfiPay extends AllMethods {
+declare class EfiPay extends AllMethods {
     /**
      * Construtor da classe EfiPay.
      * @param {Object} options - Objeto com opções de configuração e credenciais.
@@ -30,3 +30,5 @@ export default class EfiPay extends AllMethods {
     });
 }
 import { AllMethods } from "./methods/index";
+
+export = EfiPay;

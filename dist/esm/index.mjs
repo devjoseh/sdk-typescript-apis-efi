@@ -570,7 +570,7 @@ var types = "dist/types/index.d.ts";
 var exports = {
 	".": {
 		require: "./dist/cjs/index.cjs",
-		"import": "./dist/cjs/index.cjs",
+		"import": "./dist/esm/index.mjs",
 		types: "./dist/types/index.d.ts"
 	}
 };
@@ -605,6 +605,7 @@ var dependencies = {
 var scripts = {
 	start: "node app.js",
 	build: "rollup -c && tsc --project tsconfig.json",
+	postbuild: "node fix-types.js",
 	test: "./node_modules/.bin/jest",
 	"test-cov": "./node_modules/.bin/jest --coverage"
 };
@@ -615,7 +616,7 @@ var devDependencies = {
 	"@rollup/plugin-json": "^6.1.0",
 	prettier: "^3.0.3",
 	rollup: "^2.52.3",
-	typescript: "^4.3.5",
+	typescript: "^5.9.3",
 	undici: "^6.19.2"
 };
 var sdkPackage = {

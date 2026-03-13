@@ -16,7 +16,7 @@ export class ExtratosMethods {
      * }>}
      */
     listStatementFiles(): Promise<{
-        Array();
+        Array(): any;
     }>;
     /**
      * **GET /v1/extrato-cnab/download/:nome_arquivo**
@@ -55,7 +55,7 @@ export class ExtratosMethods {
      *
      */
     listStatementRecurrences(): Promise<{
-        Array();
+        Array(): any;
     }>;
     /**
      * **POST /v1/extrato-cnab/agendar**
